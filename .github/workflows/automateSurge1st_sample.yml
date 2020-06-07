@@ -1,5 +1,7 @@
-name: Bootcamp 1st Assignment
 
+
+name: Bootcamp 1st Assignment
+  
 on:
   push:
     branches: [ master ]
@@ -19,7 +21,6 @@ jobs:
          
     - name: installing surge
       run: npm install --global surge
-      
-    - name: Run surge
-      run: surge ./ HelloWorld-using-HTML.surge.sh --token ${{ secrets.SURGE-TOKEN }}
+    - name: run surge
+      run: surge ./ HelloWorld-using-HTML.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       
