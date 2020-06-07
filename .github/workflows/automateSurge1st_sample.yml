@@ -1,0 +1,23 @@
+name: Bootcamp 1st Assignment
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: installing nodejs
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: 12
+      name: installing surge
+      run: npm install -g surge
+      
+      name: Run surge
+      run: surge ./ HelloWorld-using-HTML.surge.sh --token ${{ secrets.SURGE-TOKEN}}
+      
