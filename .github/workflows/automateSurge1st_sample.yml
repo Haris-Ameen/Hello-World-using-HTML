@@ -16,9 +16,10 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12  
-      name: installing surge
+         
+    - name: installing surge
       run: npm install --global surge
       
-      name: Run surge
+    - name: Run surge
       run: surge ./ HelloWorld-using-HTML.surge.sh --token ${{ secrets.SURGE-TOKEN }}
       
