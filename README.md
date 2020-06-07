@@ -1,3 +1,3 @@
 ## Hello world using HTML
  This is a simple Hello World Website to deploy on Surge
- URL: SimpleHelloWorld.surge.sh
+ URL: HelloWorld-using-HTML.surge.sh
